@@ -14,6 +14,10 @@
   margin: auto;
 }
 
+.mySlides:nth-child(1) {
+  display: block;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
