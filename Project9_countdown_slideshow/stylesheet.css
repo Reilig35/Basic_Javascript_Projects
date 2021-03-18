@@ -14,6 +14,7 @@
   margin: auto;
 }
 
+/*Displaying the first image when loaded */
 .mySlides:nth-child(1) {
   display: block;
 }
