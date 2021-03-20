@@ -62,3 +62,33 @@ function return_Function(name) {
     return "My name is " + name;
 }
 document.getElementById("name").innerHTML = return_Function("William");
+
+//Object
+let Cat = {
+    breed: "Calico",
+    colour: "Ginger and White",
+    weight: "3lbs",
+    age: 2,
+    description: function() {
+        return "The cat is a " + this.breed + " cat and is " + this.age + " years old";
+    }
+};
+document.getElementById("cat").innerHTML = Cat.description();
+
+//Contiue used to dispaly ODD numbers only
+var text = "";
+var R;
+for (R = 0; R < 20; R++) {
+  if (R % 2 == 0) { continue; }
+  text += "The number " + R + " is ODD " + "<br>";
+}
+document.getElementById("continue").innerHTML = text;
+
+//Stopping after 7
+var dis = "";
+var U;
+for (U = 0; U < 15; U++) {
+    if (U === 8) {break; }
+    dis += "The number " + U + "<br>";
+}
+document.getElementById("break").innerHTML = dis;
